@@ -19,7 +19,7 @@ import jakarta.persistence.Id;
  * @Java version: "21.0.3" 2024-04-16 LTS
  */
 @Entity
-public class portfolio {
+public class Portfolio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -28,11 +28,11 @@ public class portfolio {
     private String description;
     private String techStack;
 
-    public portfolio() {
+    public Portfolio() {
 
     }
 
-    public portfolio(String projectName, String description, String techStack) {
+    public Portfolio(String projectName, String description, String techStack) {
         this.projectName = projectName;
         this.description = description;
         this.techStack = techStack;
@@ -42,7 +42,7 @@ public class portfolio {
         return projectName;
     }
 
-    public portfolio setProjectName(String projectName) {
+    public Portfolio setProjectName(String projectName) {
         this.projectName = projectName;
         return this;
     }
@@ -51,7 +51,7 @@ public class portfolio {
         return description;
     }
 
-    public portfolio setDescription(String description) {
+    public Portfolio setDescription(String description) {
         this.description = description;
         return this;
     }
@@ -60,7 +60,7 @@ public class portfolio {
         return techStack;
     }
 
-    public portfolio setTechStack(String techStack) {
+    public Portfolio setTechStack(String techStack) {
         this.techStack = techStack;
         return this;
     }
