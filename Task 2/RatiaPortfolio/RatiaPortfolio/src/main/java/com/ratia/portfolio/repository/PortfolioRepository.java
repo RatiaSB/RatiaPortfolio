@@ -6,7 +6,7 @@
 
 package com.ratia.portfolio.repository;
 
-import com.ratia.portfolio.model.portfolio;
+import com.ratia.portfolio.model.Portfolio;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -16,5 +16,5 @@ RatiaPortfolio
 *@Java version: "21.0.3" 2024-04-16 LTS
 */
 
-public interface PortfolioRepository extends JpaRepository<portfolio, Long> {
+public interface PortfolioRepository extends JpaRepository<Portfolio, Long> {
 }
