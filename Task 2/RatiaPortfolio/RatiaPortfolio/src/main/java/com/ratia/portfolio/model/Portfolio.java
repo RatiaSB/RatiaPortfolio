@@ -38,6 +38,10 @@ public class Portfolio {
         this.techStack = techStack;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getProjectName() {
         return projectName;
     }

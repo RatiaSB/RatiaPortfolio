@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #10405c;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(16, 64, 92, 0.1);
+}
+
+input {
+    display: block;
+    margin: 15px 0;
+    padding: 12px 15px;
+    width: 100%;
+    max-width: 450px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #10405c;
+    outline: none;
+    box-shadow: 0 0 5px #10405c;
+}
+
+button {
+    padding: 14px 30px;
+    background-color: #9a0d10;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #b31516;
+    opacity: 0.95;
+}
+
+#projectList {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(16, 64, 92, 0.2);
+}
