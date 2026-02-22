@@ -8,6 +8,8 @@ package com.ratia.portfolio.controller;
 
 import com.ratia.portfolio.model.Portfolio;
 import com.ratia.portfolio.service.PortfolioService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,9 +42,14 @@ public class PortfolioController {
     }
 
     @PostMapping
-    public Portfolio createProject(@RequestBody Portfolio portfolio){
-        return service.save(portfolio);
+//    public Portfolio createProject(@RequestBody Portfolio portfolio){
+//        return service.save(portfolio);
+//    }
+  public ResponseEntity<Portfolio> createProject(@RequestBody Portfolio portfolio){
+        return ResponseEntity.status(HttpStatus.CREATED)
+                .body(service.save(portfolio));
     }
+
 
     @PostMapping("/{id}")
     public Portfolio updateProject(@PathVariable Long id, @RequestBody Portfolio portfolio){

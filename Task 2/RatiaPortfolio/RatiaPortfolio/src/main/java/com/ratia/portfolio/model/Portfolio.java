@@ -10,6 +10,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import org.antlr.v4.runtime.misc.NotNull;
 
 /**
  * RatiaPortfolio
@@ -25,7 +26,9 @@ public class Portfolio {
     private Long id;
 
     private String projectName;
+
     private String description;
+
     private String techStack;
 
     public Portfolio() {
