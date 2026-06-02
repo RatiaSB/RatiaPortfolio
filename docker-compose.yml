@@ -1,0 +1,15 @@
+services:
+
+  backend:
+    build: ./Backend
+    container_name: ratia-backend
+    ports:
+      - "8080:8080"
+
+  frontend:
+    build: ./Frontend
+    container_name: ratia-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
