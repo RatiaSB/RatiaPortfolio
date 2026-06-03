@@ -59,12 +59,12 @@ function App() {
           value={projectName}
           onChange={(e) => setProjectName(e.target.value)}
         />
-        <input
-          type="text"
+        <textarea
           id="description"
           placeholder="Project Description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
+          rows={5}
         />
         <input
           type="text"
