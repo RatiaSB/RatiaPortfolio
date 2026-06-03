@@ -51,9 +51,10 @@ public class PortfolioController {
     }
 
 
-    @PostMapping("/{id}")
-    public Portfolio updateProject(@PathVariable Long id, @RequestBody Portfolio portfolio){
-        return service.update(id, portfolio);
+    @PutMapping("/{id}")
+    public ResponseEntity<Portfolio> updateProject(@PathVariable Long id, @RequestBody Portfolio portfolio){
+        Portfolio updated = service.update(id, portfolio);
+        return ResponseEntity.ok(updated);
     }
 
     @DeleteMapping("/{id}")
